@@ -1,21 +1,28 @@
-1. Create a Virtual Environment
+## Setup Instructions
 
+### 1. Create a Virtual Environment
+
+```bash
 python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate  # On macOS/Linux
+```
 
-# (On Windows: venv\Scripts\activate)
-
-2. Install Required Packages
-
+### 2. Install Required Packages
+```bash
 pip3 install python-dotenv openai pandas langchain langchain-openai langchain-anthropic langchain-core
+```
 
-3. Set Up Environment Variables in .env
-
+### 3. Set Up Environment Variables in .env
+```env
 OPENAI_API_KEY=your-openai-key
 ANTHROPIC_API_KEY=your-anthropic-key
+```
 
-4. Run the Programs
+### 4. Run the Programs
+```bash
+python3 main.py (this is for the chatgpt4.1 wrapper)
+```
 
-python3 main.py (this is for the chatgpt4 wrapper)
-
-python3 agentic_cpt_system.py (this is for the agentic system)
+```bash
+python3 agentic_cpt_system.py (this is for the agentic system that uses Clade + OpenAI web search)
+```
