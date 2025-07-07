@@ -29,3 +29,4 @@ for q_num, correct_answer in answer_key.items():
 
 
 print(f"Model score: {correct} out of {total}") 
+
