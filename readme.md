@@ -19,10 +19,18 @@ ANTHROPIC_API_KEY=your-anthropic-key
 ```
 
 ### 4. Run the Programs
+Run GPT Wrapper
 ```bash
-python3 main.py (this is for the chatgpt4.1 wrapper)
+python3 gpt_wrapper.py 
+```
+Run CPT Agent Claude + OpenAI Web serach
+```bash
+python3 agentic_cpt_system.py 
 ```
 
+### 5. Test score against answer key 
+#### Edit line 7 of test_taker.py to specify file name for output test answers. It will be agent_responses.txt OR gpt-4.1_wrapper_responses.txt (Whichever file was tested) 
+
 ```bash
-python3 agentic_cpt_system.py (this is for the agentic system that uses Clade + OpenAI web search)
+python3 test_taker.py 
 ```
